@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/output.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <title>Dev Burguer</title>
+</head>
+<body>
+
+    <!--HEADER-->
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center ">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img
+              src="./assets/lanches.png"
+              alt="Logo Dev" 
+              class="w-36 h-36 rounded-full shadow-lg hover:scale-110 cursor-pointer duration-200"
+            />
+            <h1 class="text-4xl mt-4 mb-2 font-bold text-white shadow-lg">Dev Burguer</h1>
+            <span class="text-white font-medium shadow-lg">Asa Sul, Brasília - DF</span>
+
+            <div class="bg-green-600 px-4 py-1 rounded-lg mt-4" id="date-span">
+                <span class="text-white font-medium">Seg à Dom - 18:00 às 22:00</span>
+            </div>
+        </div>
+    </header>
+    <!--FIM HEADER-->
+
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-4 mb-6">
+        Conheça nosso Menu
+    </h2>
+
+    <!--INÍCIO MENU-->
+    <div id="menu">
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-7xl px-2 mb-16">
+            <!--PRODUTO-->
+            <div class="flex gap-2">
+                <img
+                src="./assets/ham1.png"
+                alt="Quarteirao" 
+                class="w-29 h-28 rounded-mdshadow-lg hover:scale-110 hover:-rotate-2 cursor-pointer duration-300"
+              />
+                <div>
+                    <p class="font-bold">Quarteirão</p>
+                    <p class="text-sm">Um hambúrguer (100% carne bovina), queijo processado sabor cheddar, 
+                        picles, cebola, ketchup, mostarda e pão com gergelim.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$27,90</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn hover:scale-110"
+                        data-name="Quarteirao"
+                        data-price="27.90"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+           <!-- FIM PRODUTO-->
+
+            <!--PRODUTO-->
+            <div class="flex gap-2">
+            <img
+            src="./assets/ham2.png"
+            alt="Big Mac" 
+            class="w-29 h-28 rounded-mdshadow-lg hover:scale-110 hover:-rotate-2 cursor-pointer duration-300"
+            />
+            <div>
+                <p class="font-bold">Big Mac</p>
+                <p class="text-sm">Dois hambúrgueres (100% carne bovina), alface americana, 
+                    queijo processado sabor cheddar, molho especial, cebola, picles e pão com gergelim.</p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">R$24,90</p>
+                    <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn hover:scale-110"
+                    data-name="BigMac"
+                    data-price="24.90"
+                    >
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- FIM PRODUTO-->
+        
+        <!--PRODUTO-->
+        <div class="flex gap-2">
+            <img
+            src="./assets/ham3.png"
+            alt="MCmelt" 
+            class="w-29 h-28 rounded-mdshadow-lg hover:scale-110 hover:-rotate-2 cursor-pointer duration-300"
+            />
+            <div>
+                <p class="font-bold">Cheddar MCMelt</p>
+                <p class="text-sm">Um hambúrguer (100% carne bovina), molho lácteo cremoso sabor cheddar,
+                     cebola ao molho shoyu e pão escuro com gergelim.</p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">R$28,90</p>
+                    <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn hover:scale-110"
+                    data-name="MCMelt"
+                    data-price="28.90"
+                    >
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- FIM PRODUTO-->
+
+        
+        <!--PRODUTO-->
+        <div class="flex gap-2">
+            <img
+            src="./assets/ham4.png"
+            alt="Cheddar Duplo" 
+            class="w-30 h-28 rounded-mdshadow-lg hover:scale-110 hover:-rotate-2 cursor-pointer duration-300"
+            />
+            <div>
+                <p class="font-bold">Cheddar duplo</p>
+                <p class="text-sm">Dois hambúrgueres (100% carne bovina), cheddar, 
+                    onios rings, cebola e pão com gergelim.</p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">R$32,90</p>
+                    <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn hover:scale-110"
+                    data-name="Cheddar Duplo"
+                    data-price="32.90"
+                    >
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- FIM PRODUTO-->
+        </main>
+        <div class="mx-auto max-w-7xl px-2 my-2">
+            <h2 class="text-2xl md:text-3xl font-bold mt-4 mb-6">
+                Bebidas
+            </h2>
+        </div>
+
+        <!--GRID BEBBIDAS-->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-7xl px-2 mb-16" id="menu">
+            <!--PRODUTO-->
+            <div class="flex gap-2 w-full">
+                <img
+                src="./assets/coca.png"
+                alt="Coca" 
+                class="w-30 h-28 rounded-mdshadow-lg hover:scale-110 hover:-rotate-2 cursor-pointer duration-300"
+                />
+                <div class="w-full">
+                    <p class="font-bold">Coca-Cola</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$5,90</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn hover:scale-110"
+                        data-name="Coca"
+                        data-price="5.90"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- FIM PRODUTO-->
+
+        <!--PRODUTO-->
+            <div class="flex gap-2">
+                <img
+                src="./assets/guarana.png"
+                alt="Guarana" 
+                class="w-30 h-28 rounded-mdshadow-lg hover:scale-110 hover:-rotate-2 cursor-pointer duration-300"
+                />
+                <div class="w-full">
+                    <p class="font-bold">Guaraná</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$5,90</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn hover:scale-110"
+                        data-name="Guarana"
+                        data-price="5.90"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+         <!-- FIM PRODUTO-->
+        </div>
+        <!--FIM GRID BEBBIDAS-->
+
+    </div>
+    <!--FIM MENU-->
+
+    <!--MODAL CART-->
+    <div id="cart-modal" class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden">
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+            <h2 class="text-center font-bold text-2xl mb-2">Meu Carrinho</h2>
+            
+            <div id="cart-items" class="felx justify-between mb-2 flex-col"></div>
+
+            <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+
+            <p class="font-bold mt-4">Endereço de Entrega:</p>
+            <input id= "address" type="text" placeholder="Digite seu Endereço" class="w-full border-2 p-1 rounded my-2"/>
+            <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo!</p>
+
+            <div class="flex items-center justify-between mt-5 w-full">
+                <button id="close-modal-btn">Fechar</button>
+                <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar Pedido</button>
+            </div>
+        </div>
+    </div>
+    <!--FIM MODAL CART-->
+
+    <!--FOOTER-->
+    <footer style="background-color: #32CD32; width: 100%; padding: 10px; position: fixed; bottom: 0;">
+        <center>
+        <button id="cart-btn" class="flex items-center gap-2 text-white font-bold">
+            (<span id="cart-count"></span>)
+            VER CARRINHO
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+        </center>
+    </footer>
+    <!--FIM FOOTER-->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
