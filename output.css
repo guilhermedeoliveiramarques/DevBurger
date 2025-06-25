@@ -1947,7 +1947,7 @@ video {
 }
 
 .bg-home {
-  background-image: url('/assets/bg2.png');
+  background-image: url('./bg2.png');
 }
 
 .decoration-slice {
